@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+}
+.hamburger {
+  display: none;
+}
+.hamburger img {
+  width: 25px;
+}
+
+.show {
+  display: block !important;
+}
+
+@media screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .register-btn {
+    display: none;
+  }
+  .mob {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: rgb(240, 240, 240);
+    right: 0;
+    padding: 20px 0;
+  }
+  .mob ul {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .mob ul li:not(:last-child) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(232, 225, 225);
+  }
+}
